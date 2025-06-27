@@ -1,13 +1,15 @@
-# train.py (Version 2 - Explicit Contract)
+# train.py (FINAL, CORRECTED VERSION)
 import pandas as pd
 import joblib
 import json
 import argparse
 from pathlib import Path
 
-# --- The Contract (v2) ---
-# This script now receives its input and output paths as command-line arguments.
-# This decouples the script from the platform's specific filesystem layout.
+# --- MISSING IMPORTS - NOW ADDED ---
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score
+# --- END OF CORRECTION ---
 
 # 1. Setup Argument Parser
 parser = argparse.ArgumentParser(description="Aethelred Client Training Script")
